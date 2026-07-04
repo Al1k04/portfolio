@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alik Avetikov — Fullstack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="#" class="nav-logo">AA</a>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Open to opportunities
+      </div>
+      <h1>Hi, I'm <span>Alik Avetikov</span><br>Fullstack Developer</h1>
+      <p class="hero-desc">
+        I build modern web applications with Next.js, TypeScript, and PostgreSQL.
+        Focused on clean code, real features, and shipping things that work.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Get in touch</a>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <section id="skills">
+    <div class="section-label">What I work with</div>
+    <h2 class="section-title">Skills & Tech Stack</h2>
+    <p class="section-desc">Technologies I use to build fullstack web applications.</p>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">Frontend</div>
+        <div class="skill-tags">
+          <span class="tag">React</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Tailwind</span>
+          <span class="tag">MUI</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🗄️</div>
+        <div class="skill-name">Backend & Database</div>
+        <div class="skill-tags">
+          <span class="tag">REST API</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Prisma ORM</span>
+          <span class="tag">Auth.js</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🛠️</div>
+        <div class="skill-name">Tools & Deployment</div>
+        <div class="skill-tags">
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">Vercel</span>
+          <span class="tag">Supabase</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🌐</div>
+        <div class="skill-name">Languages</div>
+        <div class="skill-tags">
+          <span class="tag">Georgian</span>
+          <span class="tag">Russian</span>
+          <span class="tag">Armenian</span>
+          <span class="tag">English</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <section id="projects">
+    <div class="section-label">What I've built</div>
+    <h2 class="section-title">Projects</h2>
+    <p class="section-desc">Real applications deployed and working in production.</p>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-img" style="background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 50%, #1D9E75 100%);">💰</div>
+        <div class="project-body">
+          <div class="project-title">ExpenseTracker</div>
+          <p class="project-desc">
+            Personal finance app with transaction management, auto-updating charts,
+            Google OAuth, email reports, and trip budget planning.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Next.js 16</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Prisma</span>
+            <span class="tech-tag">Auth.js</span>
+          </div>
+          <div class="project-links">
+            <a href="https://expense-tracker-157e.vercel.app" target="_blank" class="project-link">↗ Live Demo</a>
+            <a href="https://github.com/Al1k04/expense-tracker" target="_blank" class="project-link">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);">✅</div>
+        <div class="project-body">
+          <div class="project-title">Todo App</div>
+          <p class="project-desc">
+            Task management app with the ability to add, complete, and delete tasks. Clean and minimal UI focused on productivity.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">React</span>
+          </div>
+          <div class="project-links">
+            <a href="https://next-todo-gray-phi.vercel.app/" target="_blank" class="project-link">↗ Live Demo</a>
+            <a href="https://github.com/Al1k04/next-todo" target="_blank" class="project-link">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img" style="background: linear-gradient(135deg, #4a1942 0%, #7b2d8b 50%, #c0392b 100%);">🧠</div>
+        <div class="project-body">
+          <div class="project-title">Quiz App</div>
+          <p class="project-desc">
+            Interactive quiz application with multiple choice questions, score tracking, and instant feedback on answers.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://quiz-app-oqi4.vercel.app/" target="_blank" class="project-link">↗ Live Demo</a>
+            <a href="https://github.com/Al1k04/quiz-app" target="_blank" class="project-link">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <section id="about">
+    <div class="section-label">Who I am</div>
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a fullstack developer based in Tbilisi, Georgia, currently studying
+          Applied Informatics at Plekhanov Russian University of Economics (graduating 2027).
+        </p>
+        <p>
+          I build web apps with Next.js, TypeScript, and PostgreSQL. I learn by building
+          real projects — every feature I add teaches me something new about how the web works.
+        </p>
+        <p>
+          Before development, I worked as a Project Manager at Hotel Tiflis and as a
+          remote dispatcher for US truck routes — both roles sharpened my communication
+          and problem-solving under pressure.
+        </p>
+        <p>
+          I'm actively looking for my first junior or internship role where I can
+          contribute and grow fast.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Projects deployed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">4+</div>
+          <div class="stat-label">Tech stack items</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Languages spoken</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">2027</div>
+          <div class="stat-label">Graduation year</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <section id="contact">
+    <div class="contact-wrapper">
+      <div class="section-label" style="text-align:center">Get in touch</div>
+      <div class="contact-title">Let's work together</div>
+      <p class="contact-desc">Open to internship and junior developer roles.</p>
+      <span class="contact-email">alikprog04@gmail.com</span>
+      <div class="contact-links">
+        <a href="https://github.com/Al1k04" target="_blank" class="contact-link">⌥ GitHub</a>
+        <a href="https://www.linkedin.com/in/alik-avetikov" target="_blank" class="contact-link">in LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built by Alik Avetikov · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
